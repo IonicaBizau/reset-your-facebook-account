@@ -1,7 +1,7 @@
 Reset Your Facebook Account
 ===========================
 
-Some scripts to delete your Facebook posts, comments and likes.
+Sometimes you want to start your Facebook activity again. So, here are some useful scripts to delete your Facebook posts, comments and likes.
 
 ## Likes
 
@@ -35,3 +35,6 @@ setInterval (function () {
   last.closest("table").remove();
 }, 2000);
 ```
+
+# License
+See LICENSE file.
