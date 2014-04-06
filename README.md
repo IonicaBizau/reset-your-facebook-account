@@ -13,6 +13,7 @@ Replace `your-facebook-username` in URLs with your Facebook username. Then start
 > https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=likes
 
 ```js
+$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 setInterval(function () {
   var last = $("._6a._6b.uiPopover.rfloat a span").last().click();
   $("span:contains(Unlike):visible").click();
@@ -25,6 +26,7 @@ setInterval(function () {
 > https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=cluster_11
 
 ```js
+$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 setInterval (function () {
   var last = $("._6a._6b.uiPopover.rfloat a span").last().click();
   $("span:contains(Delete):visible").click();
@@ -40,6 +42,7 @@ setInterval (function () {
 > https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=cluster_116
 
 ```js
+$("html, body").animate({ scrollTop: $(document).height() }, "slow");
 setInterval (function () {
   var last = $("._6a._6b.uiPopover.rfloat a span").last().click();
   $("span:contains(Delete):visible").click();
