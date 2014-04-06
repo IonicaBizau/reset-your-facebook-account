@@ -3,7 +3,13 @@ Reset Your Facebook Account
 
 Sometimes you want to start your Facebook activity again. So, here are some useful scripts to delete your Facebook posts, comments and likes.
 
+Replace `<your-facebook-username>` in URLs with your Facebook username. Then start hacking. :smile:
+
+If you find a bug, have a question or want a feature to be added, open [an issue](https://github.com/IonicaBizau/reset-your-facebook-account/issues).
+
 ## Likes
+
+> https://www.facebook.com/<your-facebook-username>/allactivity?privacy_source=activity_log&log_filter=likes
 
 ```js
 setInterval(function () {
@@ -14,6 +20,8 @@ setInterval(function () {
 ```
 
 ## Posts
+
+> https://www.facebook.com/<your-facebook-username>/allactivity?privacy_source=activity_log&log_filter=cluster_11
 
 ```js
 setInterval (function () {
@@ -27,6 +35,8 @@ setInterval (function () {
 ```
 
 ## Comments
+
+> https://www.facebook.com/<your-facebook-username>/allactivity?privacy_source=activity_log&log_filter=cluster_116
 
 ```js
 setInterval (function () {
