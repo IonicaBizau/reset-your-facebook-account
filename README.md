@@ -56,5 +56,18 @@ setInterval (function () {
 
 If you find a bug, have a question or want a feature to be added, open [an issue](https://github.com/IonicaBizau/reset-your-facebook-account/issues).
 
+## Delete messages
+
+```js
+var i = setInterval(function () {
+  $ul = $("#wmMasterViewThreadlist")
+  if (!$ul.find("li").length) return clearInterval(i);
+  $ul.find("li").last().find("span").click()
+  $("button:contains('Actions')").click()
+  $("span:contains('Delete Conversation...')").click()
+  $("input[value='Delete Conversation']").click()
+}, 500);
+```
+
 # License
 See LICENSE file.
