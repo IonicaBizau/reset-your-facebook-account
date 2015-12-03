@@ -21,85 +21,101 @@
   },
   "homepage": "https://github.com/IonicaBizau/reset-your-facebook-account#readme",
   "blah": {
-      "description": [
-        { "h2": "Prerequisites" },
-        { "p": "Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery-injector/indebdooekgjhkncmgbkeopjebofdoid?hl=en) to include jQuery on the page." },
-        { "p": "Replace `your-facebook-username` in URLs with your Facebook username. Then start hacking. :smile:" },
-        { "h2": "Likes" },
-        {
-            "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=likes"
-        },
-        {
-            "code": {
-                "language": "js",
-                "content": [
-                    "$(\"html, body\").animate({ scrollTop: $(document).height() }, \"slow\");",
-                    "setInterval(function () {",
-                    "  var last = $(\"._6a._6b.uiPopover.rfloat a span\").last().click();",
-                    "  $(\"span:contains(Unlike):visible\").click();",
-                    "  var post = last.closest(\".pam\");",
-                    "  post.prev().remove();",
-                    "  post.remove();",
-                    "}, 700);"
-                ]
-            }
-        },
-        { "h2": "Posts" },
-        {
-            "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=cluster_11"
-        },
-        {
-            "code": {
-                "language": "js",
-                "content": [
-                    "$(\"html, body\").animate({ scrollTop: $(document).height() }, \"slow\");",
-                    "setInterval (function () {",
-                    "  var last = $(\"._6a._6b.uiPopover.rfloat a span\").last().click();",
-                    "  $(\"span:contains(Delete):visible\").click();",
-                    "  setTimeout(function () {",
-                    "    $(\"button:contains(Delete Post):visible\").click();",
-                    "    last.closest(\"table\").remove();",
-                    "  }, 1000);",
-                    "}, 7000);"
-                ]
-            }
-        },
-        { "h2": "Comments" },
-        {
-            "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=cluster_116"
-        },
-        {
-            "code": {
-                "language": "js",
-                "content": [
-                    "$(\"html, body\").animate({ scrollTop: $(document).height() }, \"slow\");",
-                    "setInterval (function () {",
-                    "  var last = $(\"._6a._6b.uiPopover.rfloat a span\").last().click();",
-                    "  $(\"span:contains(Delete):visible\").click();",
-                    "  var post = last.closest(\"[data-ft]\");",
-                    "  post.prev().remove();",
-                    "  post.remove();",
-                    "}, 400);"
-                ]
-            }
-        },
-        { "p": "If you find a bug, have a question or want a feature to be added, open [an issue](https://github.com/IonicaBizau/reset-your-facebook-account/issues)." },
-        { "h2": "Delete messages" },
-        {
-            "code": {
-                "language": "js",
-                "content": [
-                    "var i = setInterval(function () {",
-                    "  $ul = $(\"#wmMasterViewThreadlist\")",
-                    "  if (!$ul.find(\"li\").length) return clearInterval(i);",
-                    "  $ul.find(\"li\").last().find(\"span\").click()",
-                    "  $(\"button:contains('Actions')\").click()",
-                    "  $(\"span:contains('Delete Conversation...')\").click()",
-                    "  $(\"input[value='Delete Conversation']\").click()",
-                    "}, 500);"
-                ]
-            }
+    "description": [
+      {
+        "h2": "Prerequisites"
+      },
+      {
+        "p": "Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery-injector/indebdooekgjhkncmgbkeopjebofdoid?hl=en) to include jQuery on the page."
+      },
+      {
+        "p": "Replace `your-facebook-username` in URLs with your Facebook username. Then start hacking. :smile:"
+      },
+      {
+        "h2": "Likes"
+      },
+      {
+        "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=likes"
+      },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "$(\"html, body\").animate({ scrollTop: $(document).height() }, \"slow\");",
+            "setInterval(function () {",
+            "  var last = $(\"._6a._6b.uiPopover.rfloat a span\").last().click();",
+            "  $(\"span:contains(Unlike):visible\").click();",
+            "  var post = last.closest(\".pam\");",
+            "  post.prev().remove();",
+            "  post.remove();",
+            "}, 700);"
+          ]
         }
-      ]
+      },
+      {
+        "h2": "Posts"
+      },
+      {
+        "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=cluster_11"
+      },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "$(\"html, body\").animate({ scrollTop: $(document).height() }, \"slow\");",
+            "setInterval (function () {",
+            "  var last = $(\"._6a._6b.uiPopover.rfloat a span\").last().click();",
+            "  $(\"span:contains(Delete):visible\").click();",
+            "  setTimeout(function () {",
+            "    $(\"button:contains(Delete Post):visible\").click();",
+            "    last.closest(\"table\").remove();",
+            "  }, 1000);",
+            "}, 7000);"
+          ]
+        }
+      },
+      {
+        "h2": "Comments"
+      },
+      {
+        "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=cluster_116"
+      },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "$(\"html, body\").animate({ scrollTop: $(document).height() }, \"slow\");",
+            "setInterval (function () {",
+            "  var last = $(\"._6a._6b.uiPopover.rfloat a span\").last().click();",
+            "  $(\"span:contains(Delete):visible\").click();",
+            "  var post = last.closest(\"[data-ft]\");",
+            "  post.prev().remove();",
+            "  post.remove();",
+            "}, 400);"
+          ]
+        }
+      },
+      {
+        "p": "If you find a bug, have a question or want a feature to be added, open [an issue](https://github.com/IonicaBizau/reset-your-facebook-account/issues)."
+      },
+      {
+        "h2": "Delete messages"
+      },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "var i = setInterval(function () {",
+            "  $ul = $(\"#wmMasterViewThreadlist\")",
+            "  if (!$ul.find(\"li\").length) return clearInterval(i);",
+            "  $ul.find(\"li\").last().find(\"span\").click()",
+            "  $(\"button:contains('Actions')\").click()",
+            "  $(\"span:contains('Delete Conversation...')\").click()",
+            "  $(\"input[value='Delete Conversation']\").click()",
+            "}, 500);"
+          ]
+        }
+      }
+    ]
   }
 }
