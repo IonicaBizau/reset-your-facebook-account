@@ -63,6 +63,22 @@ var i = setInterval(function () {
 }, 500);
 ```
 
+## Clear timeline
+> https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=all
+
+```js
+setInterval (function () {
+  $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  $('*[aria-label="Hidden from Timeline"]').each(function () {
+    $(this).parents('.bottomborder').remove();
+  });
+  var allowed = $('*[aria-label="Allowed on Timeline"] span').last();
+  allowed.click();
+  $('.uiContextualLayer').find('li:nth-child(2)').find('a span').click();
+  allowed.parents('.bottomborder').remove();
+}, 400);
+```
+
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
