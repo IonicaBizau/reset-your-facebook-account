@@ -62,7 +62,6 @@ var i = setInterval(function () {
   $("input[value='Delete Conversation']").click()
 }, 500);
 ```
-
 ## Clear timeline
 > https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=all
 

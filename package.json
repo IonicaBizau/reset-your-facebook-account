@@ -115,6 +115,27 @@
             "}, 500);"
           ]
         }
+      },
+      {
+        "h2": "Clear timeline"
+      },
+      { "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=all" },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "setInterval (function () {",
+            "  $(\"html, body\").animate({ scrollTop: $(document).height() }, \"slow\");",
+            "  $('*[aria-label=\"Hidden from Timeline\"]').each(function () {",
+            "    $(this).parents('.bottomborder').remove();",
+            "  });",
+            "  var allowed = $('*[aria-label=\"Allowed on Timeline\"] span').last();",
+            "  allowed.click();",
+            "  $('.uiContextualLayer').find('li:nth-child(2)').find('a span').click();",
+            "  allowed.parents('.bottomborder').remove();",
+            "}, 400);"
+          ]
+        }
       }
     ]
   }
