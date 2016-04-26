@@ -1,3 +1,4 @@
+
 # reset-your-facebook-account [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/reset-your-facebook-account.svg)](https://www.npmjs.com/package/reset-your-facebook-account) [![Downloads](https://img.shields.io/npm/dt/reset-your-facebook-account.svg)](https://www.npmjs.com/package/reset-your-facebook-account) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Sometimes you want to start your Facebook activity again. So, here are some useful scripts to delete your Facebook posts, comments and likes.
@@ -5,6 +6,7 @@
 ## Prerequisites
 
 Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery-injector/indebdooekgjhkncmgbkeopjebofdoid?hl=en) to include jQuery on the page.
+
 
 Replace `your-facebook-username` in URLs with your Facebook username. Then start hacking. :smile:
 
@@ -78,10 +80,11 @@ setInterval (function () {
 }, 400);
 ```
 
-## How to contribute
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## License
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
