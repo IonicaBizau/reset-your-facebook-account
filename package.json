@@ -1,8 +1,8 @@
 {
   "name": "reset-your-facebook-account",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Sometimes you want to start your Facebook activity again. So, here are some useful scripts to delete your Facebook posts, comments and likes.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -119,7 +119,9 @@
       {
         "h2": "Clear timeline"
       },
-      { "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=all" },
+      {
+        "blockquote": "https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=all"
+      },
       {
         "code": {
           "language": "js",
@@ -138,5 +140,16 @@
         }
       }
     ]
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
