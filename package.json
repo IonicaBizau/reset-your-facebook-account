@@ -1,6 +1,6 @@
 {
   "name": "reset-your-facebook-account",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Sometimes you want to start your Facebook activity again. So, here are some useful scripts to delete your Facebook posts, comments and likes.",
   "main": "lib/index.js",
   "scripts": {
