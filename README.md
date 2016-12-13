@@ -72,10 +72,10 @@ var i = setInterval(function () {
 ```js
 setInterval (function () {
   $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-  $('*[aria-label="Hidden from Timeline"]').each(function () {
+  $('*[data-tooltip-content="Hidden from Timeline"]').each(function () {
     $(this).parents('.bottomborder').remove();
   });
-  var allowed = $('*[aria-label="Allowed on Timeline"] span').last();
+  var allowed = $('*[data-tooltip-content="Allowed on Timeline"] span').last();
   allowed.click();
   $('.uiContextualLayer').find('li:nth-child(2)').find('a span').click();
   allowed.parents('.bottomborder').remove();

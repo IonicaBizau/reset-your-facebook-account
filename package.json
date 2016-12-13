@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/IonicaBizau/reset-your-facebook-account.git"
   },
+  "contributors": [
+     "Martin Philipponneau <contact@dtnmr.com> (https://dtnmr.com)"
+  ],
   "keywords": [
     "facebook",
     "reset"
