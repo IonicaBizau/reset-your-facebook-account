@@ -1,6 +1,6 @@
 {
   "name": "reset-your-facebook-account",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Sometimes you want to start your Facebook activity again. So, here are some useful scripts to delete your Facebook posts, comments and likes.",
   "main": "lib/index.js",
   "scripts": {
@@ -11,13 +11,13 @@
     "url": "git+https://github.com/IonicaBizau/reset-your-facebook-account.git"
   },
   "contributors": [
-     "Martin Philipponneau <contact@dtnmr.com> (https://dtnmr.com)"
+    "Martin Philipponneau <contact@dtnmr.com> (https://dtnmr.com)"
   ],
   "keywords": [
     "facebook",
     "reset"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/reset-your-facebook-account/issues"
@@ -148,12 +148,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
