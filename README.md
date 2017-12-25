@@ -9,12 +9,14 @@
 
 ## Prerequisites
 
+
 Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery-injector/indebdooekgjhkncmgbkeopjebofdoid?hl=en) to include jQuery on the page.
 
 
 Replace `your-facebook-username` in URLs with your Facebook username. Then start hacking. :smile:
 
 ## Likes
+
 > https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=likes
 
 ```js
@@ -27,7 +29,9 @@ setInterval(function () {
   post.remove();
 }, 700);
 ```
+
 ## Posts
+
 > https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=cluster_11
 
 ```js
@@ -41,7 +45,9 @@ setInterval (function () {
   }, 1000);
 }, 7000);
 ```
+
 ## Comments
+
 > https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=cluster_116
 
 ```js
@@ -55,9 +61,11 @@ setInterval (function () {
 }, 400);
 ```
 
+
 If you find a bug, have a question or want a feature to be added, open [an issue](https://github.com/IonicaBizau/reset-your-facebook-account/issues).
 
 ## Delete messages
+
 ```js
 var i = setInterval(function () {
   $ul = $("#wmMasterViewThreadlist")
@@ -68,7 +76,9 @@ var i = setInterval(function () {
   $("input[value='Delete Conversation']").click()
 }, 500);
 ```
+
 ## Clear timeline
+
 > https://www.facebook.com/your-facebook-username/allactivity?privacy_source=activity_log&log_filter=all
 
 ```js
@@ -83,6 +93,7 @@ setInterval (function () {
   allowed.parents('.bottomborder').remove();
 }, 400);
 ```
+
 
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
