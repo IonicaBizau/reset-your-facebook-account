@@ -12,7 +12,7 @@
 ## Prerequisites
 
 
-Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery-injector/indebdooekgjhkncmgbkeopjebofdoid?hl=en) to include jQuery on the page.
+Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery-injector/ekkjohcjbjcjjifokpingdbdlfekjcgi?hl=en) or [this Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey) to include jQuery on the page.
 
 
 Replace `your-facebook-username` in URLs with your Facebook username. Then start hacking. :smile:
