@@ -36,10 +36,13 @@
 
 
 
+
+:warning: **Please note** that these scripts are a collection of scripts maintained by the community. Please do *not* use them if you do not understand how they are working. You may have to make changes in them depending on the way how Facebook is changing. These scripts are going to help the process of cleaning the Facebook data, but you are in control of it.
+
 ## Prerequisites
 
 
-Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery-injector/indebdooekgjhkncmgbkeopjebofdoid?hl=en) to include jQuery on the page.
+Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery-injector/ekkjohcjbjcjjifokpingdbdlfekjcgi?hl) to include jQuery on the page.
 
 
 Replace `your-facebook-username` in URLs with your Facebook username. Then start hacking. :smile:
