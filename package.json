@@ -38,6 +38,33 @@
         "p": "Replace `your-facebook-username` in URLs with your Facebook username. Then start hacking. :smile:"
       },
       {
+        "h2": "All-In-One (flexible)"
+      },
+      {
+        "blockquote": "https://www.facebook.com/your-facebook-username/allactivity"
+      },
+      {
+        "code": {
+          "language": "js",
+          "content": [
+            "  selector =                                   ",
+            "    `                                          ",
+            "      [aria-label='Action options'],           ",
+            "      :contains('Delete'),                     ",
+            "      :contains('Unvote'),                     ",
+            "      :contains('Unlike'),                     ",
+            "      :contains('Move to trash'),              ",
+            "      :contains('Move to Trash'),              ",
+            "      :contains('Remove Reaction'),            ",
+            "      :contains('Hide from profile'),          ",
+            "      :contains('Delete Your Activity'),       ",
+            "      :contains('Remove Me From Guest List')   ",
+            "    `                                          ",
+            "  setInterval(() => $(selector).click(), 999)  "
+          ]
+        }
+      },
+      {
         "h2": "Likes"
       },
       {
