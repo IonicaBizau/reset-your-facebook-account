@@ -19,7 +19,7 @@
 
 # reset-your-facebook-account
 
- [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/reset-your-facebook-account.svg)](https://www.npmjs.com/package/reset-your-facebook-account) [![Downloads](https://img.shields.io/npm/dt/reset-your-facebook-account.svg)](https://www.npmjs.com/package/reset-your-facebook-account) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+ [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/reset-your-facebook-account.svg)](https://www.npmjs.com/package/reset-your-facebook-account) [![Downloads](https://img.shields.io/npm/dt/reset-your-facebook-account.svg)](https://www.npmjs.com/package/reset-your-facebook-account) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/@johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 <a href="https://www.buymeacoffee.com/H96WwChMy" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
 
@@ -46,6 +46,27 @@ Install [this Chrome extension](https://chrome.google.com/webstore/detail/jquery
 
 
 Replace `your-facebook-username` in URLs with your Facebook username. Then start hacking. :smile:
+
+## All-In-One (flexible)
+
+> https://www.facebook.com/your-facebook-username/allactivity
+
+```js
+  selector =
+    `
+      [aria-label='Action options'],
+      :contains('Delete'),
+      :contains('Unvote'),
+      :contains('Unlike'),
+      :contains('Move to trash'),
+      :contains('Move to Trash'),
+      :contains('Remove Reaction'),
+      :contains('Hide from profile'),
+      :contains('Delete Your Activity'),
+      :contains('Remove Me From Guest List')
+    `
+  setInterval(() => $(selector).click(), 999)
+```
 
 ## Likes
 
@@ -157,6 +178,7 @@ setInterval (function () {
 
 
 
+
 ## :question: Get Help
 
 There are few ways to get help:
@@ -166,6 +188,8 @@ There are few ways to get help:
  1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
  2. For bug reports and feature requests, open issues. :bug:
  3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
+
 
 
 
